@@ -5,15 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Учебный проект по техническому заданию"
+      content="История Максима Морозова о подготовке к московскому марафону"
     />
-    <title>Учебный проект</title>
+    <title>Подготовка к марафону — Максим Морозов</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <main>
-      <h1>Учебный проект</h1>
-      <p>Стартовая версия страницы.</p>
+    <header class="site-header">
+      <div class="layout site-header__inner">
+        <a class="site-header__brand" href="#top">MAXIM / MARATHON</a>
+        <nav class="site-header__nav" aria-label="Навигация по истории">
+          <a href="#about">О главном</a>
+          <a href="#details">Результаты</a>
+          <a href="#contact">Связаться</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="layout page-grid">
+      <section class="hero panel panel--wide" aria-labelledby="hero-title">
+        <div class="hero__main">
+          <p class="label">Цель, к которой я иду / Максим Морозов</p>
+          <h1 id="hero-title">Марафон начинается не с 42 км</h1>
+          <p class="hero__lead">
+            Год назад Максим начал с самого простого: чередовал четыре минуты
+            бега и четыре минуты ходьбы. Главное — начать прямо сейчас и
+            постепенно наращивать объём.
+          </p>
+        </div>
+
+        <div class="hero__summary">
+          <p class="label">Первая тренировка</p>
+          <p class="hero__result">4 минуты бега / 4 минуты ходьбы</p>
+          <a class="text-link" href="#about">Перейти к истории →</a>
+        </div>
+      </section>
+
+      <section id="about" class="panel panel--wide story" aria-labelledby="about-title">
+        <p class="label">01 / Подготовка</p>
+        <h2 id="about-title">Три вещи, которые нельзя пропускать</h2>
+        <div class="principles__grid">
+          <article class="principle-card">
+            <h3 class="principle-card__title">Регулярность</h3>
+            <p>Тренировки должны быть регулярными: только так можно стабильно наращивать форму.</p>
+          </article>
+
+          <article class="principle-card">
+            <h3 class="principle-card__title">Восстановление</h3>
+            <p>Качественное восстановление важно не меньше нагрузки.</p>
+          </article>
+
+          <article class="principle-card">
+            <h3 class="principle-card__title">Не бросать</h3>
+            <p>Первые недели бег может казаться неприятным, но затем от него уже трудно отказаться.</p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="panel panel--wide key-point" aria-label="Ключевая мысль">
+        <p class="label">Ключевая мысль</p>
+        <p>«Главное — начать с малого, но прямо сейчас»</p>
+      </aside>
+
+      <section id="details" class="panel panel--wide details" aria-labelledby="details-title">
+        <div class="details__heading">
+          <p class="label">02 / Результаты</p>
+          <h2 id="details-title">Результаты на дистанциях</h2>
+        </div>
+
+        <div class="details__grid">
+          <article class="data-card">
+            <p class="data-card__index">21,1 км</p>
+            <h3 class="data-card__title">2:32:21</h3>
+            <p class="data-card__text">Первый полумарафон.</p>
+          </article>
+
+          <article class="data-card data-card--accent">
+            <p class="data-card__index">10 км</p>
+            <h3 class="data-card__title">50:23</h3>
+            <p class="data-card__text">Хорошее время на дистанции.</p>
+          </article>
+
+          <article class="data-card">
+            <p class="data-card__index">1 км</p>
+            <h3 class="data-card__title">3:35</h3>
+            <p class="data-card__text">Лучший быстрый километр.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="panel panel--wide action" aria-labelledby="action-title">
+        <div>
+          <p class="label">03 / Следующий шаг</p>
+          <h2 id="action-title">Спустя год тренировок я готов бежать марафон 27 сентября!</h2>
+        </div>
+        <a class="button" href="mailto:muromir7777@gmail.com">Связаться с Максимом</a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="layout site-footer__inner">
+        <p>Интервью и реализация · Андрей Чухарев</p>
+        <p>2026</p>
+      </div>
+    </footer>
   </body>
 </html>
